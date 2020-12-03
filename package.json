@@ -7,7 +7,8 @@
     "clean": "rimraf dist",
     "dev:build": "webpack -d",
     "dev:serve": "node server.js",
-    "dev": "run-s clean dev:*"
+    "dev": "run-s clean dev:*",
+    "start": "node server.js"
   },
   "devDependencies": {
     "html-webpack-plugin": "^3.2.0",
