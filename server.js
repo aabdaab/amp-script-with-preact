@@ -6,6 +6,7 @@ const app = new Koa();
 const PORT = process.env.PORT || 3000;
 
 app.use(async (ctx, next) => {
+  console.log('ctx.request', ctx.request);
   const origin = `${ctx.request.protocol}://${ctx.request.host}`
   ctx.set('AMP-Access-Control-Allow-Source-Origin', origin);
   ctx.set('Access-Control-Allow-Origin', '*');
